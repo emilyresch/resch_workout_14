@@ -1,7 +1,7 @@
 //pseudo code 
 //exercises are documents and workout plans are collections
 //require models
-const Workout = require("../models"); //looks at index file by default
+const Workout = require("../models").Workout; 
 module.exports = function (app) {
 
 app.get("/api/workouts", (req, res) => {
