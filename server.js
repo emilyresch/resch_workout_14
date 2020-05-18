@@ -26,13 +26,8 @@ const options = {
   useFindAndModify: false,
   family: 4 // Use IPv4, skip trying IPv6
 };
+
 mongoose.connect(MONGODB_URI, options)
-
-
-
-
-
-
 
 require("./routes/api-routes")(app);
 require("./routes/html-routes")(app);
